@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style0.css">
+     
+    
+    <title>Акватика</title>
+    <style>
+      body, html {
+  
+ background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+      #ffffff 20%,
+    #265883 30%,
+    #044f77 50%,
+    #00406F 70%,
+    #00315D 91%,
+     #031F46 92%,
+     
+    #000304 93%
+    
+);
+
+
+  
+}
+
+@media (max-width: 765px) {
+ body, html {
+  
+ background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+      #ffffff 20%,
+    #206caf 30%,
+    #044f77 50%,
+    #00406F 70%,
+    #00315D 89%,
+    #031F46 93%,
+     
+   #000304   94%
+);
+ }
+}
+
+
+</style>
+</head>
+<body class="gradient-ubout">
+
+
+
+
+
+  <div class="wrapper">
+
+
+   <div class="video-section">
+   <div class="video-wrapper">
+    <video  class="video-bg" autoplay muted loop playsinline preload="auto">
+  <source src="https://res.cloudinary.com/dgqjpsmoy/video/upload/v1763706604/video-bg_tvpgod.webm" type="video/webm">
+  <source src="https://res.cloudinary.com/dgqjpsmoy/video/upload/v1763707215/video-bg_vy2mlw.mp4" type="video/mp4">
+</video>
+ 
+   </div>
+  <!-- Хедер -->
+  <header class="container d-flex justify-content-between align-items-center">
+  <a href=""><img class="logo-img" src="icon/logo_aquatica.png" alt="логотип"></a>
+    <nav class="d-none d-md-flex gap-4">
+      <a href="#sity" class="nav-link">Про клуб</a>
+      <a href="index2.html" class="nav-link">Навчання</a>
+      <a href="#blog" class="nav-link">Фото</a>
+      <a href="#news" class="nav-link">Наш блог</a>
+      <a href="#prorosal" class="nav-link">Акції</a>
+      <a href="#reviews" class="nav-link">Відгуки</a>
+        <a href="index5.html" class="nav-link">Контакти</a>
+        <a href="index3.html" class="nav-link">Тури</a>
+
+
+    </nav>
+    <div class="d-flex align-items-center">
+    <button class="btn 
+  me-3 phone-btn">
+  <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 16 16" class="phone-icon">
+    <path d="M3.654 1.328a.678.678 0 0 1 .737-.183l2.522.84a.678.678 0 0 1 .408.595l.12 1.289a.678.678 0 0 1-.252.554L6.02 5.884a11.493 11.493 0 0 0 4.095 4.095l1.451-1.169a.678.678 0 0 1 .554-.252l1.289.12a.678.678 0 0 1 .595.408l.84 2.522a.678.678 0 0 1-.183.737l-1.745 1.745a1.745 1.745 0 0 1-1.79.421c-2.184-.73-4.29-2.304-6.288-4.302S1.34 5.621.61 3.437a1.745 1.745 0 0 1 .421-1.79L2.776.692a.678.678 0 0 1 .878-.364z"/>
+  </svg><span></span>
+</button>
+
+      <div class="socials">
+        <a href="#"><i class="bi bi-facebook "></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+ <button class="burger d-md-none" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+    <div class="mobile-menu" id="mobileMenu">
+    <nav class="nav-mobile">
+      <a href="#sity" class="nav-link">Про клуб</a>
+      <a href="index2.html" class="nav-link">Навчання</a>
+      <a href="#blog" class="nav-link">Фото</a>
+      <a href="#news" class="nav-link">Наш блог</a>
+      <a href="#prorosal" class="nav-link">Акції</a>
+      <a href="#reviews" class="nav-link">Відгуки</a>
+      <a href="index5.html" class="nav-link">Контакти</a>
+       <a href="index3.html" class="nav-link">Тури</a>
+    </nav>
+    <div class="mobile-socials pe-4">
+      <a href="#"><i class="bi bi-facebook "></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+    </div>
+  </div>  
+  </header>
+
+  <!-- Основний блок -->
+<div class="hero container justify-content-start align-items-start hero-position ">
+    <div class="col-6 mb-3 hero-content">
+      <h1 class="title-hero display-4 fw-bold mb-3">Подорож у тисячу миль.<br>
+      Починається з першого кліку</h1>
+      
+      <button class="btn btn-outline-light btn-lg custom-btn"
+      data-bs-toggle="modal" data-bs-target="#divingFormModal">
+      Хочу пірнати...
+    </button>
+  <div class=" box-span d-flex   align-items-center gap-4 mt-4">
+        <span class="span text-white">Працюємо з 3009 року</span>
+        <span class="span-icon text-white">Понад 2500 учнів</span>
+
+      </div>
+    </div>
+</div>
+     
+
+<div class="container  text-white ">
+  <div class="cards-box  ">
+    <div class="card-bg d-flex flex-column justify-content-between">
+      <div class="text-card">
+        <span class="icon-card">Навчання</span>
+        <p>Акції та гарячі пропозиції на курси
+навчання.</p>
+      </div>
+      <a href="index2.html" class="card-btn pt-1">Дізнатись більше</a>
+    </div>
+
+    <div class="card-bg d-flex flex-column justify-content-between">
+      <div class="text-card">
+       <span class="icon-card icon-online" > Онлайн запис</span>
+        <p>Залишіть своє питання, ми передзвонимо
+та проконсультуємо вас.</p>
+      </div>
+      <button class="card-btn" data-bs-toggle="modal" data-bs-target="#divingFormModal">Дізнатись більше</button>
+    </div>
+
+    <div class="card-bg d-flex flex-column justify-content-between">
+      <div class="text-card">
+       <span class="icon-card icon-sert"> Сертифікати</span>
+        <p>Дайвінг у подарунок для ваших друзів та
+знайомих.</p>
+      </div>
+     <a href="index4.html" class="card-btn pt-1">Дізнатись більше</a>
+    </div>
+  </div>
+</div>
+</div>
+<section id="sity" class="sity " >
+  <div class="container text-center sity-bg">
+    <span class="section-span pb-3">Навчання дайвінгу в Одесі</span>
+    <h2 class="title-section mb-4">
+      Дайвінг в Одесі
+    </h2>
+    <p class="section-text ">Ласкаво просимо! На сторінках нашого сайту ви знайдете якісну, потрібну інформацію щодо вашого захоплення. Детальніше про нас вам розкажуть розділи нашого сайту, завдяки відгукам, звітам, статтям ви познайомитеся з нами ближче, дізнаєтеся, що дайвінг в Одесі це реальність. Багато корисної інформації вам надасть соціальний блог «Акватика» там же, ви можете розміщувати свої звіти та відгуки про подорожі, а також знаходити нових друзів із захоплення. Для прямого спілкування он-лайн, запрошуємо Вас на тематичний форум і в соціальні мережі, де "живуть" учасники клубу, які завжди раді новим знайомствам.</p>
+  </div>
+</section>
+<section id="prorosal" class="prorosal " >
+  <div class="container prorosal-bg">
+   <div class="text-center pb-3" >
+     <span class="section-span pb-3 ">УСПІЙ ПРИДБАТИ ПУТІВКУ</span>
+    <h2 class="title-section mb-4  ">Гарячі пропозиції</h2>
+    </div>
+<ul class="menu-card">
+  <li class="item-card">
+    <article class="article">
+      <img class="mb-2 article-img" src="img/card-img.png" alt="Дайвери під водою">
+      <div class="card-content">
+        <h5 class="title-menu text-white">Discover Scuba Diving</h5>
+        <p  >Пробне занурення-“відчуй світ під водою</p>
+      </div>
+      <a class="link-article"  href="">Перейти</a>
+    </article>
+  </li>
+  <li class="item-card">
+    <article class="article">
+      <img class="mb-2 article-img" src="img/card-b.jpg" alt="Колюча риба пливе під водою">
+      <div class="card-content">
+        <h5 class="title-menu text-white">Peak Perfomance Buoyancy</h5>
+        <p  >Курс майстерні плавучості Peak
+Perfomance Buoyancy.</p>
+      </div>
+      <a  class="link-article" href="">Перейти</a>
+    </article>
+  </li>
+  <li class="item-card">
+    <article class="article">
+      <img class="mb-2 article-img" src="img/galeri-d.jpg" alt="Дайвер фотографує черепаху під водою">
+      <div class="card-content">
+        <h5 class="title-menu text-white">Sideomund Diver Scuba</h5>
+        <p  >Курс занурення бокової конфігурацій, поради для тих, хто живе морем.»</p>
+      </div>
+      <a  class="link-article" href="">Перейти</a>
+    </article>
+  </li>
+  <li class="item-card">
+    <article class="article">
+      <img class="mb-2 article-img" src="img/fish-a.jpg" alt="риби пливуть на дні моря">
+      <div class="card-content">
+        <h5 class="title-menu text-white">Deep Diver </h5>
+        <p  >Курс глубокого занурення- це зануренняу у нові відчуття .</p>
+      </div>
+      <a class="link-article" href="">Перейти 
+       
+      </a>
+    </article>
+  </li>
+</ul>
+
+<div class="section-divider"></div>
+</div>
+
+</section>
+
+<section  id="reviews" class="reviews">
+  <div class="container reviews-bg">
+   <div class="text-center pb-3" >
+     <span class="section-span  text-white pb-3 ">ДІЗНАЙТЕСЯ ЩО ПРО НАС ДУМАЮТЬ</span>
+    <h2 class=" reviews-title  mb-4  ">Відгуки про нашу роботу</h2>
+    </div>
+  <div class="reviews-slider">
+    <div class="review-card active">
+      <img class="review-img"  src="icon/reviews-a.png" alt="Відгук 1">
+      <p>“Дуже сподобалося! Інструктори — справжні професіонали!”</p>
+      <h5 class="text-white">Марія</h5>
+    </div>
+
+    <div class="review-card">
+      <img class="review-img" src="icon/reviews-b.png" alt="Відгук 2">
+      <p>“Це був найкращий дайвінг у моєму житті. Рекомендую!”</p>
+      <h5 class="text-white" >Олександр</h5>
+    </div>
+
+    <div class="review-card">
+      <img class="review-img" src="icon/reviews-c.png" alt="Відгук 3">
+      <p>“Незабутні враження, неймовірна команда — дякую!”</p>
+      <h5 class="text-white">Олег</h5>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+ 
+  <!-- туман -->
+  <div class="fog left-fog"></div>
+  <div class="review-content ">
+  <p class="section-text text-white">Ви запитаєте, чи є дайвінг в Одесі? Відповідь однозначна – так, є! Акватика пропонує навчання, як в Одесі, і там. Найприємніше вчитися на морі скажете ви! Напевно так, але зверніть увагу на те, що багато клубів підводного плавання за кордоном можуть не мати українськомовного персоналу (інструкторів) кваліфікація теж залишається загадкою, до того ж вам доведеться витрачати дорогоцінний час відпустки на вивчення підручників, таблиць, відпрацювання навичок, складання іспитів. Чи не краще пройти навчання поряд з будинком у зручний час, і спокійній обстановці, з кваліфікованими інструкторами, а під час довгоочікуваної відпустки насолоджуватися усіма принадами океану.</p>
+</div>
+<div class="section-divider"></div>
+  </div>
+</section>
+<section id="blog" class="blog">
+ 
+  <div class="container">
+    
+     <div class="text-center  pb-3" >
+     <span class="section-span text-white pb-3 ">ЖИВІ ЕМОЦІЇ</span>
+    <h2 class="title-section text-white mb-4  ">Наша фото-галерея</h2>
+    </div>
+    <div class="swiper mySwiper mb-5">
+  <div class="swiper-wrapper">
+    
+    <div class="swiper-slide box-img"><img class="blog-img" src="img/galeri-d.jpg" alt="Фото 1"></div>
+    <div class="swiper-slide box-img"><img class="blog-img" src="img/fish-a.jpg" alt="Фото 2"></div>
+    <div class="swiper-slide box-img"><img class="blog-img" src="img/galeri-b.jpg" alt="Фото 3"></div>
+    <div class="swiper-slide box-img"><img class="blog-img" src="img/galeri-c.jpg" alt="Фото 4"></div>
+    <div class="swiper-slide box-img"><img class="blog-img" src="img/fish.jpg" alt="Фото 5"></div>
+   <div class="swiper-slide box-img"><img class="blog-img" src="img/galeri-i.png" alt="Фото 6"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+ 
+</div>
+<button class="btn-blog">Дивитись всі фото</button>
+ <div class="review-content ">
+  <p class="section-text text-white">Підводне плавання – це справжнє зцілення кожної людини, що змінює пріоритети відпочинку. Це можливість знайти нові емоції, завести знайомства із цікавими людьми. Так, кожна людина до цього захоплення ставиться за своїм, для багатьох цей світ висловлює прагнення нового і прекрасного. Багато людей, захоплені дайвінгом із впевненістю скажуть, що підводне плавання – сміливо можна віднести до одного з найкращих захоплень! Воно дозволяє відчути невагомість, насолодитися чудовими пейзажами, прихованими від звичайного поля зору. Тут кожен почувається вільним, ніби ширяє над землею. Сьогодні це доступно кожному, хто прагне пізнати нове, до спілкування та позитивних емоцій. Це незабутнє відчуття надовго залишається всередині та кличе назад під воду.</p>
+</div>
+<div class="section-divider"></div>
+  </div>
+
+</section>
+<section id="news" class="news pt-4">
+  <div class="container">
+     <div class="text-center  pb-3" >
+     <span class="section-span text-white pb-3 ">БУДЬ В КУРСІ ОСТАННІХ НОВИН</span>
+    <h2 class="title-section text-white mb-4  ">Наш блог</h2>
+    </div>
+       <div class="blog-cards">
+      <div class="blog-card">
+        <div class="image-wrapper">
+          <img src="img/galeri-b.jpg" alt="Diving">
+          <div class="wave"></div>
+        </div>
+        <h3>Як підготуватись до свого першого занурення</h3>
+        <p>Поради для новачків: що взяти з собою, як не хвилюватись і насолодитись першим досвідом під водою.</p>
+         <a class=" link-blog btn-news"  href="index6.html#preparation">Перейти</a>
+      </div>
+
+      <div class="blog-card">
+        <div class="image-wrapper">
+          <img src="img/fish-a.jpg" alt="Diving" >
+          <div class="wave"></div>
+        </div>
+        <h3>Найкрасивіші місця для дайвінгу у світі</h3>
+        <p >Від Мальдівів до Червоного моря — відкрий найяскравіші куточки океану, які захоплюють дух.</p>
+         <a class="pt-3 link-blog btn-news"  href="index6.html#place">Перейти</a>
+      </div>
+
+      <div class="blog-card">
+        <div class="image-wrapper">
+          <img src="img/news-b.jpg" alt="Diving">
+          <div class="wave"></div>
+        </div>
+        <h3>Як піклуватися про спорядження для дайвінгу</h3>
+        <p>Зберігай своє спорядження правильно, щоб воно служило довше й залишалось у відмінному стані.</p>
+        <a class="pt-3 link-blog btn-news"  href="index6.html#equipment">Перейти</a>
+      </div>
+       <div class="blog-card">
+        <div class="image-wrapper">
+          <img src="img/news-c.jpg" alt="Diving">
+          <div class="wave"></div>
+        </div>
+        <h3>Безпечне занурення: 5 головних правил</h3>
+        <p>Ключові поради для кожного дайвера — як зберегти спокій, рівновагу і безпеку під час кожного занурення.</p>
+ <a class="pt-3 link-blog btn-news"  href="index6.html#safety">Перейти</a>
+      
+      </div>
+       </div>
+<div class="review-content ">
+  <p class="section-text text-white">Ви коли-небудь замислювалися над тим, що океан є найдавнішою субстанцією, яка існує на планеті? Зрозуміло, це Океан Станіслава Лема, що не мислить, під назвою Соляріс, але все ж, не викликає сумнівів, що зародилося життя саме у водних глибинах. Не важливо, чи це дайвінг в Москві, Підмосковне озеро або занурення на океанських просторах, щоразу, коли людина готується до занурення, вона відчуває хвилювання, яке цілком зрозуміле. Водна гладь приховує величезний потенціал, адже вона є джерелом життя. Океан манить, містить величезну кількість таємниць та загадок. Достатньо лише раз поринути під воду, і позитивні відчуття вже ніколи не забудуться, вони залишаться назавжди, як частина самого життя.</p>
+</div>
+<div class="section-divider"></div>
+</div>
+</section>
+<section id="social" class="social">
+  <div class="container">
+    <h2 class="social-title">Ми в соціальних мережах</h2>
+    <div class="social-cards">
+      
+      <div class="social-card">
+        <div class="icon fb">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <p>Слідкуйте за нами у Facebook, щоб бути в курсі всіх новин і фото з дайвінгів!</p>
+        <button class="btn-social">Приєднатися</button>
+      </div>
+
+      <div class="social-card">
+        <div class="icon ig">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <p>Дивіться наші фото підводного світу та сторіс із занурень у Instagram!</p>
+        <button class="btn-social">Приєднатися</button>
+      </div>
+
+      <div class="social-card">
+        <div class="icon tw">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <p>Читайте короткі новини та поради для дайверів у нашому Twitter!</p>
+        <button class="btn-social">Приєднатися</button>
+      </div>
+
+    </div>
+ 
+  </div>
+    
+</section>
+
+<footer class="footer  text-white ">
+ 
+  <div class="container">
+    <div class="box-footer d-flex flex-wrap justify-content-between align-items-center mb-4">
+      <a href="#" class="mb-3 mb-md-0">
+        <img class="logo-img" src="icon/logo_aquatica.png" alt="логотип" style="max-width: 150px;">
+      </a>
+
+      <nav class="footer-nav text-center text-md-end">
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3">
+          <a href="#sity" class="nav-link text-white p-0">Про клуб</a>
+          <a href="index2.html" class="nav-link text-white p-0">Навчання</a>
+          <a href="#blog" class="nav-link text-white p-0">Фото</a>
+          <a href="#news" class="nav-link text-white p-0">Наш блог</a>
+          <a href="#prorosal" class="nav-link text-white p-0">Акції</a>
+          <a href="#reviews" class="nav-link text-white p-0">Відгуки</a>
+            <a href="index4.html" class="nav-link text-white p-0">Тури</a>
+          <a href="index5.html" class="nav-link text-white p-0">Контакти</a>
+        </div>
+        <div class="socials-boxs d-flex justify-content-center justify-content-md-end gap-3">
+          <a href="#"><i class="bi bi-facebook text-white fs-5"></i></a>
+          <a href="#"><i class="bi bi-instagram text-white fs-5"></i></a>
+          <a href="#"><i class="bi bi-twitter text-white fs-5"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="box-contacts d-flex flex-wrap justify-content-between align-items-center text-center text-md-start mt-4">
+      <div class="boxs mb-3 mb-md-0">
+        <a class="text-white d-block" href="tel:+380951256600">+380951256600</a>
+        <a class="text-white d-block" href="mailto:scuba-divers@gmail.com">scuba-divers@gmail.com</a>
+      </div>
+      <div class="text-footer small">
+        <p class="m-0 pb-2">Усі права захищені © 2010–2025<br>Навчання дайвінгу в Одесі</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient"></div>
+  <div class="container position-relative">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+</footer>
+
+
+
+  </div>
+
+  <!-- Модальне вікно -->
+  <div class="modal fade" id="divingFormModal" tabindex="-1" aria-labelledby="divingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content form-modal ">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white" id="divingFormLabel">Залиште заявку</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрити"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label text-white">Прізвище та ім’я</label>
+              <input type="text" class="form-control form-input" placeholder="Введіть ваше ім’я" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-white">Дата</label>
+              <input type="date" class="form-control form-input" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-white">Номер телефону</label>
+              <input type="tel" class="form-control form-input" placeholder="+380..." required>
+            </div>
+            <button type="submit" class="btn btn-gradient w-100 mt-3">Відправити заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="main.js"></script>  
+</body>
+</html>

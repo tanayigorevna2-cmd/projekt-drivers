@@ -1,0 +1,107 @@
+.present {
+    padding: clamp(40px, 5.20vw, 100px) 0;
+/* background: linear-gradient(to bottom, white 0%, #158794 30%, #0d4c53 100%);*/
+}
+.title-present {
+    font-size: 46px;
+    font-weight: 500;
+}
+.header-present{
+    background-image: url(./img/present-d.jpg);
+  
+    height: 200px;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: center center;
+   
+
+}
+
+
+.present-img {
+    max-width: 200px;
+   border: 2px solid #fff;
+   border-radius:6px ;
+    height: 300px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+   
+}
+
+.certificate,
+.certificate-driver
+{
+     padding: clamp(40px, 5.20vw, 100px) 0;
+   /*background-color: #0d4c53;*/
+}
+.certificate-img{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.certificate-list{
+    border-bottom: 1px solid #a7a6a6 ;
+}
+.certificate-list h4 {
+    color: aliceblue;
+
+}
+.certificate-list p{
+    color: #fff;
+    opacity: 0.5;  
+    padding-bottom: 20px;
+}
+.text-person{
+    color: black;
+    opacity: 0.5;
+
+}
+/*для сторінки контакти*/
+.map{
+    width: 80%;
+  max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* співвідношення сторін 16:9 */
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid #fff; 
+}
+  .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+@media (max-width: 768px) {
+    .present-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificate-list p,
+    .present-text p{
+        font-size: 14px;
+    }
+   
+    .certificate-img{
+        width: 90%;
+
+    }
+    .title-present{
+        text-align: center;
+        font-size: 24px;
+    }
+    .header-present{
+    background-image: url(./img/present-d.jpg);
+    height: 100px;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: center center;
+   
+
+}
+
+}
+

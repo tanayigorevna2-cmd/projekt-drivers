@@ -1,0 +1,121 @@
+
+ .tour {
+     padding: clamp(60px, 6.77vw, 130px) 0;
+      
+
+}
+
+
+
+.card-tour {
+  background-color:#fff ;
+ outline: 3px solid #4ecbff;
+   border-radius:12px ;
+     position: relative;
+  box-shadow: 0 0 15px rgba(78, 203, 255, 0.6); /* ніжна бірюза */
+  overflow: hidden;
+}
+.tour-text{ 
+  color: #00315D;
+}
+.card-tour:hover{
+   background-color:#afdfef ;
+}
+.title-color{
+color: #206caf 25%  ;  
+
+}
+.card-tour {
+  position: relative;
+  z-index: 1;
+}
+
+
+  .card-tour::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 3px;
+
+  background: linear-gradient(
+    130deg,
+    #4ecbff, /* ніжна бірюза */
+    #0e8cb5,
+    #044f77,
+    #00315D
+  );
+
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+ 
+
+@keyframes glowBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.tour-content h4 {
+  color:#103a58;
+  font-size: 18px;
+  font-weight: 500;
+   
+}
+.prise{
+  color: #103a58;
+  font-size: 18px;
+}
+.card-tour img{
+  max-width: 250px;
+  width:100%;
+  height:160px;
+ border-radius: 10px;
+ display: block;
+  object-fit: cover; 
+}
+
+.tour-text {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 18px;
+}
+.social-tour{
+  padding-top: clamp(60px, 6.77vw, 130px)0;
+  padding-bottom: clamp(100px, 7.81vw, 150px) ;
+}
+@media (max-width: 768px) {
+  .card-tour{
+    flex-direction: column;
+    align-items: start;
+
+  }
+  .tour-content h4,
+   .prise{
+ 
+  font-size: 14px;
+
+   
+}
+
+  .card-tour img{
+  margin: 0 auto;
+  max-width: 500px;
+  width:95%;
+  height:160px;
+ border-radius: 10px;
+}
+.tour-text {
+  color: #00315D;
+  font-size: 14px;
+}
+.footer{
+  padding-top:5px ;
+}
+}

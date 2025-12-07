@@ -1,0 +1,58 @@
+section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+/* Загальне обнулення */
+*,
+*::before,
+*::after {
+  margin: 0;            /* прибирає стандартні відступи */
+  padding: 0;           /* прибирає стандартні падінги */
+  box-sizing: border-box; /* бордери не збільшують розмір елемента */
+  border: 0;            /* прибирає стандартні бордери */
+  outline: none;        /* прибирає обводки при фокусі (якщо потрібно) */
+  background: none;     /* прибирає стандартний фон */
+  font: inherit;        /* успадковує шрифти */
+  vertical-align: baseline; /* вирівнювання по базовій лінії */
+}
+
+/* HTML5 display reset для старих браузерів */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Кнопки, інпути, селекти, textarea */
+button, input, select, textarea {
+  all: unset;           /* прибирає всі стандартні стилі */
+  box-sizing: border-box;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Списки */
+ul, ol {
+  list-style: none;
+}
+
+/* Посилання */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Таблиці */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

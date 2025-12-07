@@ -1,0 +1,155 @@
+.preparation {
+      padding: clamp(40px, 5.20vw, 100px) 0;
+ /*background: linear-gradient(
+  to bottom,
+  #ffffff,    
+  #158794     */
+
+
+}
+.title-blog{
+   font-weight: 600;
+   font-size: 35px;
+   color: #0d4c53;
+   text-align: center;
+}
+.text-prep{
+    color: #0d4c53; 
+    font-size: 18px;
+}
+/*************/
+.boll{
+ display: block;
+ min-width:40px ;
+ height:40px ;
+ border-radius: 50%;
+ background-color: #158794;
+  background: radial-gradient(circle at center, white 0%, #158794 90%);
+  position: relative;
+  animation: bounce 1.4s infinite ease-in-out;
+
+}
+.box-boll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   padding: 60px 10px 0;
+}
+
+.boll-min{
+     min-width:15px ;
+ height:15px ;
+}
+
+.boll-mini {
+   min-width:20px ;
+ height:20px ;  
+}
+.boll-medium {
+     min-width:30px ;
+ height:30px ;
+}
+.boll {
+  position: relative;
+ 
+  background: radial-gradient(circle at 30% 30%, #ffffff, #e0e8ff, #cfe0ff);
+  box-shadow:
+    0 0 18px rgba(255, 255, 255, 0.95),
+    0 0 38px rgba(255, 255, 255, 0.55),
+    0 0 70px rgba(255, 255, 255, 0.35);
+  
+  animation: bounce 2s infinite;
+}
+
+/* Підстрибування */
+@keyframes bounce {
+  0%   { transform: translateY(0) scale(1); }
+  30%  { transform: translateY(-12px) scale(1.08); }
+  50%  { transform: translateY(0) scale(0.95); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Затримка по черзі */
+.boll:nth-child(1) { animation-delay: 0s; }
+.boll:nth-child(2) { animation-delay: 0.1s; }
+.boll:nth-child(3) { animation-delay: 0.2s; }
+.boll:nth-child(4) { animation-delay: 0.3s; }
+.boll:nth-child(5) { animation-delay: 0.4s; }
+.boll:nth-child(6) { animation-delay: 0.5s; }
+.boll:nth-child(7) { animation-delay: 0.6s; }
+
+
+.containr-blog{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.text-preparation {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 18px;
+    margin-bottom: 20px;
+   
+}
+.place {
+/*background: linear-gradient(to bottom, #158794 0%, #0d4c53 100%);*/
+  padding: clamp(30px, 3.12vw, 60px) 0;
+
+  
+}
+.title-list {
+    color: #fff;
+
+}
+.equipment,
+.safety  {
+  /*background-color: #0d4c53 ; */
+  padding: clamp(30px, 3.12vw, 60px) 0;
+
+}
+
+
+@media (max-width: 768px) {
+  .box-boll {
+    
+    gap: 15px;
+   padding: 40px 10px 0;
+}
+.text-preparation,
+ .text-prep{
+   
+    font-size: 14px;
+    margin-bottom: 20px;
+   
+}
+.title-blog{
+  
+   font-size: 25px;
+  
+}
+.boll{
+
+ min-width:30px ;
+ height:30px ;
+
+
+}
+
+
+.boll-min{
+     min-width:10px ;
+ height:10px ;
+}
+
+.boll-mini {
+   min-width:20px ;
+ height:20px ;  
+}
+.boll-medium {
+     min-width:25px ;
+ height:25px ;
+}
+
+  
+}

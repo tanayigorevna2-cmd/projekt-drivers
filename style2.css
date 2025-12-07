@@ -1,0 +1,511 @@
+
+
+
+.header-top{
+   width: 100%;
+    height: 200px;
+     background-image:  url(./img/header-top.jpg);
+       
+       
+    background-position:  center center;
+    background-repeat:no-repeat ;
+    background-size:cover; 
+ 
+   
+   
+} 
+
+.link-color{
+ color:#66c8d1 !important;
+}
+.link-bottom{
+  font-size: 20px;
+color: #103a58;  
+  transition: color 0.3s ease;
+}
+.link-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color:#66c8d1;
+  transition: width 0.3s ease;
+}
+
+.link-bottom:hover,
+ .link-bottom.active{
+  color:#66c8d1; /* яскравіший синій при наведенні */
+}
+
+
+
+.link-bottom:hover::after,
+.link-bottom.active::after {
+  width: 100%;
+}
+.bi-bottom{
+    color: #0c314b;
+    font-size: 30px;
+    padding-right: 20px;
+     transition: all 0.3s ease;}
+.bi-bottom:hover,
+ .bi-bottom.active {
+ color: #66c8d1; /* яскравіший синій */
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(13, 213, 253, 0.5);
+}     
+.header-bottom{
+    border-bottom: 1px solid #fff;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+}
+.burger-bottom span{
+    background-color: #103a58;
+}
+/****************************кнопки********************/
+ .btn-btn{
+ background: white; /* або світлий відтінок #f5f5f5 */
+  color: #031F46; /* темний колір тексту з твоєї палітри */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 
+    0 4px 8px rgba(38, 88, 131, 0.4),   /* #265883 */
+    0 6px 15px rgba(4, 79, 119, 0.3),    /* #044f77 */
+    0 8px 20px rgba(3, 31, 70, 0.5);     /* #031F46 */
+  transition: transform 0.2s, box-shadow 0.2s;
+ }
+ .btn-btn:hover{
+    transform: translateY(-2px);
+  box-shadow: 
+    0 6px 12px rgba(38, 88, 131, 0.5),
+    0 8px 18px rgba(4, 79, 119, 0.4),
+    0 10px 25px rgba(3, 31, 70, 0.6);
+}
+.btn-btn:hover,
+.btn-btn:active{
+  background:#8094b1; /* або світлий відтінок #f5f5f5 */
+  color:#fff;
+
+}
+ 
+.pg-content{
+background:transparent /*linear-gradient(to top, #66c8d1 40%, #ffffff 100%)*/;
+}
+.pg-text{
+  font-size: 14px ;
+color: #103a58;
+ 
+
+}
+/***********courses********************/
+.courses{
+   background:transparent /*linear-gradient(to bottom, #66c8d1, #158794)*/;
+}
+.courses-title {
+  font-weight: 700 ;
+  font-size: 24;
+color: #fff;
+}
+  
+.courses-span {
+ color: #dfe4e6;
+}
+
+
+
+.cards-scroll {
+  
+ display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+.cards-scroll::-webkit-scrollbar,
+.photo-cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.card-item {
+  /*flex: 0 0 85%;*/
+   flex: 1 1 calc(33.333% - 1rem);
+border-bottom:2px solid rgba(255,255,255,0.9) ;
+border-right:2px solid rgba(255,255,255,0.9) ;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  scroll-snap-align: start;
+  transition: transform 0.35s ease, box-shadow 0.35s;
+  box-shadow: 0 6px 18px rgba(16,58,88,0.12);
+}
+
+.card-item:hover,
+.card-item.active {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(16,58,88,0.18);
+}
+
+/* overlay */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.3) 100%);
+}
+
+/* верхня частина */
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-thumb {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.9);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* нижня частина */
+.card-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.card-tag {
+  background: rgba(255,255,255,0.15);
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(3px);
+  font-size: 0.9rem;
+}
+
+
+
+
+ .box-border {
+  width: 80%;
+  max-width: 260px;
+  height: 220px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-top: transparent;
+  border-left: transparent;
+  /*position: relative;
+  left: 17%;*/
+  transition: all 0.6s ease;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+  /*bottom: 2%;*/
+  
+ 
+
+  transition: all 0.6s ease;
+}
+.box-border.active {
+   border-color:#66c8d1;
+  filter: drop-shadow(0 0 10px #66c8d1);
+}
+.btn-active{
+  opacity: 0;
+  background-color:#c3c6c7 ;
+}
+.card-item:hover .btn-active,
+.card-item.active .btn-active {
+  opacity: 1;
+}
+
+
+/* 🔹 Анімація при наведенні */
+.card-item:hover .box-border,
+.card-item.active .box-border {
+  border-color:#66c8d1 ;
+  filter: drop-shadow(0 0 10px #66c8d1);
+ 
+   animation: waveGlow 2.5s ease-in-out infinite;
+}
+
+
+@keyframes waveGlow {
+  0% {
+    box-shadow: 0 0 5px #66c8d1, inset 0 0 10px #66c8d1;
+  }
+  50% {
+    box-shadow: 0 0 20px #66c8d1, inset 0 0 25px #66c8d1;
+  }
+  100% {
+    box-shadow: 0 0 5px #66c8d1, inset 0 0 10px #66c8d1;
+  }
+}
+/*************************************/
+.spacial{
+
+}
+.card-courses{
+  flex: 0 0 calc(33.333% - 1rem);
+}
+
+
+/******************************/
+
+
+
+/******************************/
+.reviews-two{
+  background:transparent/**#0d4c53*/ ;
+}
+/***************************************************/
+.foto {
+  background-color:transparent/*#0d4c53*/ ;
+   padding: 40px 0;
+
+}
+.photo-section {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.photo-cards-scroll {
+  display: flex; /* ЗМІНЕНО: картки в ряд, а не в колонку */
+  flex-wrap: nowrap; /* ЗМІНЕНО: не дозволяємо перенос на новий ряд */
+  justify-content: space-around;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding:30px 0 ;
+  border-top: 2px solid #e1dcdc;
+   border-bottom: 2px solid #e1dcdc;
+
+  margin-bottom: 30px;
+}
+
+ .neon {
+
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.7),
+    0 0 10px rgba(255,255,255,0.6);
+}
+
+.photo-card {
+  flex: 0 0 158px; /* фіксована ширина */
+  height: 158px;
+  background:#e3eef7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.photo-card:hover,
+.photo-card.active {
+  box-shadow: 0 0 15px #4cc9f0, 0 0 30px #4cc9f0;
+    transform: translateY(-4px);
+}
+
+
+.photo-img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.photo-caption {
+  font-size: 14px;
+  color: #103a58;
+  margin-bottom: 10px;
+}
+
+
+
+.photo-span
+{
+min-width: 80px;
+height: 76px;
+display: block;
+background-image:url(./icon/Vector-a.png);
+background-repeat:no-repeat ;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+.span-one{
+  background-image:url(./icon/Vector-b.png);
+}
+.span-two{
+  background-image:url(./icon/Vector-c.png);
+}
+.span-free{
+  background-image:url(./icon/Vector-d.png);
+}
+.span-four{
+  background-image:url(./icon/Vector-i.png);
+}
+
+
+.foto-box {
+ padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.photo-imge {
+ border: 2px solid #e1dcdc;
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+/*******************************************************/
+.driver-content {
+ 
+   padding-bottom:clamp(40px, 5.20vw, 100px);
+  
+}
+
+
+.driver-text,
+.driver-item  {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.driver-item {
+  margin-bottom: 5px;
+}
+.driver-tex-border {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* рухоме сяйво */
+.driver-tex-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; 
+  background: linear-gradient(
+    120deg,
+    #66c8d1,
+    #158794,
+    #e1dcdc,
+    #66c8d1,
+    #81eaf6
+  );
+  background-size: 300% 300%;
+  animation: glowBorder 4s linear infinite;
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+@keyframes glowBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/********************************************************/
+@media (max-width: 768px) {
+  .header-top{
+ 
+    height: 120px;
+   }
+  .foto-box {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .photo-imge {
+    flex: 0 0 158px;   /* фіксована ширина */
+    height: 158px;     /* фіксована висота */
+    scroll-snap-align: start;
+  }
+
+  /* ховаємо скролбар */
+  .foto-box::-webkit-scrollbar {
+    display: none;
+  }
+}
+/***************************************************/
+@media (max-width: 768px) {
+   .header-top{
+ min-height: 100px;
+} 
+.socials-bottom{
+    display: block !important;
+} 
+.bi-bottom{
+    font-size: 25px;
+}
+.row{
+  gap: 10px;
+}
+.box-border {
+  
+  left: 20px;
+  
+}
+.cards-scroll {
+     flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+  
+  .card-item {   flex: 0 0 80%; }
+  }
+   .photo-cards-scroll {
+    flex-wrap: nowrap; /* ЗМІНЕНО: залишаємо горизонтальний ряд навіть на мобільних */
+  }
+@media (min-width: 680px){}
+
+ 
+
+@media (min-width: 992px) {
+ 
+}
+/***********************************************/
+
+
+
+
+ 
+
