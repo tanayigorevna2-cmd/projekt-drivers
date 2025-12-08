@@ -708,7 +708,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
 
 @media (max-width: 765px) {
 .footer {
-  padding: 10px 0}
+  padding: 0 0}
 
 .box-footer {
     flex-direction: column;
@@ -741,3 +741,4 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
