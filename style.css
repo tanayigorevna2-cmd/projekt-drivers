@@ -428,7 +428,7 @@ margin-top:clamp( 40px, 7.29vw, 120px) ;
 .blog-title { color: #fff; }
 
 /* swiper */
-.swiper { width: 100%; padding: 50px 0; }
+.swiper { width: 100%; padding: 50px 0; overflow: visible; }
 .swiper-slide {
   background: #fff;
   border-radius: 15px;
@@ -759,6 +759,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
 
