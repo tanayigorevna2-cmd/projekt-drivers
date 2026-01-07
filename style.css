@@ -232,7 +232,15 @@ box-shadow:
   border: 2px solid #fff;
 }
 
-
+.article{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.btn-link-article{
+ 
+ margin-top: auto;
+}
 
 .card-content {
   opacity: 0;
@@ -741,4 +749,5 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
