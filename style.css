@@ -301,10 +301,7 @@ box-shadow:
 
 .item-card:hover,
 .item-card:active {
-  transform: rotateY(6deg) rotateX(2deg) translateY(-5px);
-  
   box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); 
- 
   border: 2px solid rgba(50, 160, 200, 0.7);
   transition: all 0.3s ease;
 }
@@ -748,6 +745,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
 
