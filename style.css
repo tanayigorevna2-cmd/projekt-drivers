@@ -296,7 +296,6 @@ box-shadow:
   background-size: contain;
   transition: transform 0.3s ease;
 }
-.link-article:hover::after,.link-article:active::after { transform: translateX(6px); }
 
 
 
@@ -749,5 +748,6 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
