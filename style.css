@@ -116,6 +116,7 @@ header .nav-link:hover, header .nav-link:active{ text-decoration: underline; }
 @media (max-width: 768px) {
   .cards-box{
   padding-bottom: 50px;
+    gap:20px;
     }
   .hero{
   padding-top:30px ;
@@ -761,6 +762,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
 
