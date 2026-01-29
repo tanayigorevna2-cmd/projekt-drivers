@@ -46,7 +46,7 @@ svg:hover, svg:active
 .mobile-socials a { color: #5fc9f3; font-size: 1.2rem; transition: 0.3s; }
 
 .mobile-menu.active { display: flex; }
-@media (max-width: 770px) { 
+@media (max-width: 992px) { 
   .socials { display: none !important; }  }
 header { position: relative; z-index: 2; color: white; padding: 10px 0; }
 header .nav-link, header .btn { color: white !important; }
@@ -634,7 +634,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
 }
 .social-card:hover,
 .social-card:active 
-{  transform: scale(1.06);
+{  transform: scale(1.02);
   box-shadow:
     0 0 35px rgba(95,201,243,0.9),
     0 0 60px rgba(21,135,148,0.6);
@@ -761,6 +761,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
 
