@@ -629,7 +629,9 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
  
 }
-
+.social-card, .social-card .icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .social-card:hover,
 .social-card:active 
 {  transform: scale(1.06);
@@ -759,6 +761,7 @@ box-shadow: 0 8px 25px rgba(50, 160, 200, 0.7); /* легка бірюзово-�
    Global: smooth reveal & section shimmer
    (non-invasive: safe to append)
    --------------------------- */
+
 
 
 
